@@ -12,7 +12,7 @@ RUN wget -O /opt/go1.4.1.src.tar.gz https://storage.googleapis.com/golang/go1.4.
 
 ADD files/golang.sh /etc/profile.d/golang.sh
 
-RUN source /etc/profile
+RUN chmod 755 /etc/profile.d/golang.sh && /etc/profile.d/golang.sh
 
 RUN go get golang.org/x/tools/cmd/... && go get golang.org/x/tools/cmd/godoc
 
