@@ -2,7 +2,7 @@ FROM centos:7
 MAINTAINER Ryan Liao <pirsquare.ryan@gmail.com>
 
 ENV GOROOT=/opt/go
-ENV PATH=$PATH:$GOROOT/bin
+ENV PATH=$PATH:$GOROOT/bin:/opt/gopackages/thirdparty/bin:/opt/gopackages/local/bin
 ENV GOPATH=/opt/gopackages/thirdparty:/opt/gopackages/local
 ENV GOPATH_THIRDPARTY=/opt/gopackages/thirdparty
 ENV GOPATH_LOCAL=/opt/gopackages/local
